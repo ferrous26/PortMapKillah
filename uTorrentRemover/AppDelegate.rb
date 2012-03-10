@@ -8,8 +8,14 @@
 
 class AppDelegate
   attr_accessor :window
+  attr_accessor :button
+  
   def applicationDidFinishLaunching(a_notification)
     # Insert code here to initialize your application
+  end
+  
+  def removeMappings sender
+    
   end
 end
 

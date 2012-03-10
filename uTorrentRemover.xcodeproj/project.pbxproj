@@ -14,6 +14,7 @@
 		AF830317150AE6A600940C5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF830315150AE6A600940C5E /* MainMenu.xib */; };
 		AF83031A150AE6A600940C5E /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = AF830319150AE6A600940C5E /* rb_main.rb */; };
 		AF83031C150AE6A600940C5E /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = AF83031B150AE6A600940C5E /* AppDelegate.rb */; };
+		AFD7331E150B2B6D0050E082 /* TCMPortMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD7331D150B2B6D0050E082 /* TCMPortMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,13 +31,14 @@
 		AF830300150AE6A600940C5E /* uTorrentRemover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uTorrentRemover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF830304150AE6A600940C5E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AF830306150AE6A600940C5E /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
-		AF83030D150AE6A600940C5E /* uTorrentRemover-Info.plist */ = {isa = PBXFileReference; path = "uTorrentRemover-Info.plist"; sourceTree = "<group>"; };
+		AF83030D150AE6A600940C5E /* uTorrentRemover-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "uTorrentRemover-Info.plist"; sourceTree = "<group>"; };
 		AF83030F150AE6A600940C5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AF830311150AE6A600940C5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AF830313150AE6A600940C5E /* uTorrentRemover-Prefix.pch */ = {isa = PBXFileReference; path = "uTorrentRemover-Prefix.pch"; sourceTree = "<group>"; };
+		AF830313150AE6A600940C5E /* uTorrentRemover-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "uTorrentRemover-Prefix.pch"; sourceTree = "<group>"; };
 		AF830316150AE6A600940C5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AF830319150AE6A600940C5E /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		AF83031B150AE6A600940C5E /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		AFD7331D150B2B6D0050E082 /* TCMPortMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TCMPortMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			files = (
 				AF830305150AE6A600940C5E /* Cocoa.framework in Frameworks */,
 				AF830307150AE6A600940C5E /* MacRuby.framework in Frameworks */,
+				AFD7331E150B2B6D0050E082 /* TCMPortMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 		AF830303150AE6A600940C5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFD7331D150B2B6D0050E082 /* TCMPortMapper.framework */,
 				AF830304150AE6A600940C5E /* Cocoa.framework */,
 				AF830306150AE6A600940C5E /* MacRuby.framework */,
 			);
@@ -285,6 +289,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -302,6 +307,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -343,6 +349,7 @@
 				AF830321150AE6A600940C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF830322150AE6A600940C5E /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -351,6 +358,7 @@
 				AF830324150AE6A600940C5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
