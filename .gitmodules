@@ -1,0 +1,3 @@
+[submodule "vendor/TCMPortMapper"]
+	path = vendor/TCMPortMapper
+	url = https://github.com/ferrous26/TCMPortMapper
