@@ -14,7 +14,6 @@
 		AF830317150AE6A600940C5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF830315150AE6A600940C5E /* MainMenu.xib */; };
 		AF83031A150AE6A600940C5E /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = AF830319150AE6A600940C5E /* rb_main.rb */; };
 		AF83031C150AE6A600940C5E /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = AF83031B150AE6A600940C5E /* AppDelegate.rb */; };
-		AFD7331E150B2B6D0050E082 /* TCMPortMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFD7331D150B2B6D0050E082 /* TCMPortMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +23,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = AF8302FF150AE6A600940C5E;
 			remoteInfo = uTorrentRemover;
+		};
+		AFE91083150C475E00AD9FC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF8302F7150AE6A600940C5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE9107E150C472B00AD9FC3;
+			remoteInfo = TCMPortMapper;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,7 +44,7 @@
 		AF830316150AE6A600940C5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AF830319150AE6A600940C5E /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		AF83031B150AE6A600940C5E /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
-		AFD7331D150B2B6D0050E082 /* TCMPortMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TCMPortMapper.framework; sourceTree = "<group>"; };
+		AFE9108B150C4A4900AD9FC3 /* TCMPortMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TCMPortMapper.framework; path = vendor/TCMPortMapper/build/Release/TCMPortMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,6 @@
 			files = (
 				AF830305150AE6A600940C5E /* Cocoa.framework in Frameworks */,
 				AF830307150AE6A600940C5E /* MacRuby.framework in Frameworks */,
-				AFD7331E150B2B6D0050E082 /* TCMPortMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +80,7 @@
 		AF830303150AE6A600940C5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AFD7331D150B2B6D0050E082 /* TCMPortMapper.framework */,
+				AFE9108B150C4A4900AD9FC3 /* TCMPortMapper.framework */,
 				AF830304150AE6A600940C5E /* Cocoa.framework */,
 				AF830306150AE6A600940C5E /* MacRuby.framework */,
 			);
@@ -137,6 +142,20 @@
 			passBuildSettingsInEnvironment = 1;
 			productName = Deployment;
 		};
+		AFE9107E150C472B00AD9FC3 /* TCMPortMapper */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "";
+			buildConfigurationList = AFE91081150C472B00AD9FC3 /* Build configuration list for PBXLegacyTarget "TCMPortMapper" */;
+			buildPhases = (
+			);
+			buildToolPath = rake;
+			buildWorkingDirectory = "$(SOURCE_ROOT)/vendor/TCMPortMapper";
+			dependencies = (
+			);
+			name = TCMPortMapper;
+			passBuildSettingsInEnvironment = 1;
+			productName = TCMPortMapper;
+		};
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +170,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AFE91084150C475E00AD9FC3 /* PBXTargetDependency */,
 			);
 			name = uTorrentRemover;
 			productName = uTorrentRemover;
@@ -180,6 +200,7 @@
 			targets = (
 				AF8302FF150AE6A600940C5E /* uTorrentRemover */,
 				AF830308150AE6A600940C5E /* Deployment */,
+				AFE9107E150C472B00AD9FC3 /* TCMPortMapper */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +235,11 @@
 			isa = PBXTargetDependency;
 			target = AF8302FF150AE6A600940C5E /* uTorrentRemover */;
 			targetProxy = AF830309150AE6A600940C5E /* PBXContainerItemProxy */;
+		};
+		AFE91084150C475E00AD9FC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFE9107E150C472B00AD9FC3 /* TCMPortMapper */;
+			targetProxy = AFE91083150C475E00AD9FC3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -290,6 +316,7 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/vendor/TCMPortMapper/build/Release\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -308,6 +335,7 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/vendor/TCMPortMapper/build/Release\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -327,6 +355,27 @@
 		AF830324150AE6A600940C5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+			};
+			name = Release;
+		};
+		AFE9107F150C472B00AD9FC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AFE91080150C472B00AD9FC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -359,6 +408,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AFE91081150C472B00AD9FC3 /* Build configuration list for PBXLegacyTarget "TCMPortMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFE9107F150C472B00AD9FC3 /* Debug */,
+				AFE91080150C472B00AD9FC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
