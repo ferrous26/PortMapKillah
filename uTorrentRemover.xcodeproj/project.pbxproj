@@ -19,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AF7BEA2A150C8B8C00DC4C24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF8302F7150AE6A600940C5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF7BEA25150C8B5F00DC4C24;
+			remoteInfo = Submodules;
+		};
 		AF830309150AE6A600940C5E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AF8302F7150AE6A600940C5E /* Project object */;
@@ -134,6 +141,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXLegacyTarget section */
+		AF7BEA25150C8B5F00DC4C24 /* Submodules */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = tcmportmapper;
+			buildConfigurationList = AF7BEA28150C8B5F00DC4C24 /* Build configuration list for PBXLegacyTarget "Submodules" */;
+			buildPhases = (
+			);
+			buildToolPath = rake;
+			buildWorkingDirectory = "$(SOURCE_ROOT)";
+			dependencies = (
+			);
+			name = Submodules;
+			passBuildSettingsInEnvironment = 1;
+			productName = Submodules;
+		};
 		AF830308150AE6A600940C5E /* Deployment */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "--compile --embed";
@@ -157,6 +178,7 @@
 			buildToolPath = rake;
 			buildWorkingDirectory = "$(SOURCE_ROOT)/vendor/TCMPortMapper";
 			dependencies = (
+				AF7BEA2B150C8B8C00DC4C24 /* PBXTargetDependency */,
 			);
 			name = TCMPortMapper;
 			passBuildSettingsInEnvironment = 1;
@@ -207,6 +229,7 @@
 				AF8302FF150AE6A600940C5E /* uTorrentRemover */,
 				AF830308150AE6A600940C5E /* Deployment */,
 				AFE9107E150C472B00AD9FC3 /* TCMPortMapper */,
+				AF7BEA25150C8B5F00DC4C24 /* Submodules */,
 			);
 		};
 /* End PBXProject section */
@@ -239,6 +262,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AF7BEA2B150C8B8C00DC4C24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF7BEA25150C8B5F00DC4C24 /* Submodules */;
+			targetProxy = AF7BEA2A150C8B8C00DC4C24 /* PBXContainerItemProxy */;
+		};
 		AF83030A150AE6A600940C5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AF8302FF150AE6A600940C5E /* uTorrentRemover */;
@@ -271,6 +299,27 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AF7BEA26150C8B5F00DC4C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF7BEA27150C8B5F00DC4C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		AF83031D150AE6A600940C5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -390,6 +439,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AF7BEA28150C8B5F00DC4C24 /* Build configuration list for PBXLegacyTarget "Submodules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7BEA26150C8B5F00DC4C24 /* Debug */,
+				AF7BEA27150C8B5F00DC4C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AF8302FA150AE6A600940C5E /* Build configuration list for PBXProject "uTorrentRemover" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
