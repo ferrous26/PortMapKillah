@@ -9,6 +9,8 @@
 class AppDelegate
   attr_accessor :window
   attr_accessor :button
+  attr_accessor :table
+  attr_accessor :spinner
 
   def applicationDidFinishLaunching(a_notification)
     mapper = TCMPortMapper.sharedInstance
@@ -20,14 +22,21 @@ class AppDelegate
                object: mapper
 
     mapper.start
+    mapper.requestUPNPMappingTable
   end
   
   def removeMappings sender
     TCMPortMapper.sharedInstance.requestUPNPMappingTable
+    spinner.startAnimation self
   end
 
   def portMapperDidReceiveUPNPMappingTable notif
-    NSLog(notif.userInfo.inspect)
+    objects = notif.userInfo['mappingTable'].map do |x|
+      UPnPTableRow.new x['ipAddress'], x['description']
+    end
+    table.setContent objects
+
+    spinner.stopAnimation self
   end
 end
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF47F65D150C5E05008337CF /* UPnPMappingTableController.rb in Resources */ = {isa = PBXBuildFile; fileRef = AF47F65C150C5E05008337CF /* UPnPMappingTableController.rb */; };
+		AF47F664150C612F008337CF /* UPnPTableRow.rb in Resources */ = {isa = PBXBuildFile; fileRef = AF47F663150C612F008337CF /* UPnPTableRow.rb */; };
 		AF830305150AE6A600940C5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF830304150AE6A600940C5E /* Cocoa.framework */; };
 		AF830307150AE6A600940C5E /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF830306150AE6A600940C5E /* MacRuby.framework */; };
 		AF830310150AE6A600940C5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF83030E150AE6A600940C5E /* InfoPlist.strings */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF47F65C150C5E05008337CF /* UPnPMappingTableController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = UPnPMappingTableController.rb; sourceTree = "<group>"; };
+		AF47F663150C612F008337CF /* UPnPTableRow.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = UPnPTableRow.rb; sourceTree = "<group>"; };
 		AF830300150AE6A600940C5E /* uTorrentRemover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uTorrentRemover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF830304150AE6A600940C5E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AF830306150AE6A600940C5E /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
@@ -91,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				AF83031B150AE6A600940C5E /* AppDelegate.rb */,
+				AF47F663150C612F008337CF /* UPnPTableRow.rb */,
+				AF47F65C150C5E05008337CF /* UPnPMappingTableController.rb */,
 				AF830314150AE6A600940C5E /* Resources */,
 				AF830318150AE6A600940C5E /* Other Sources */,
 				AF83030C150AE6A600940C5E /* Supporting Files */,
@@ -214,6 +220,8 @@
 				AF830317150AE6A600940C5E /* MainMenu.xib in Resources */,
 				AF83031A150AE6A600940C5E /* rb_main.rb in Resources */,
 				AF83031C150AE6A600940C5E /* AppDelegate.rb in Resources */,
+				AF47F65D150C5E05008337CF /* UPnPMappingTableController.rb in Resources */,
+				AF47F664150C612F008337CF /* UPnPTableRow.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +424,7 @@
 				AFE91080150C472B00AD9FC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
