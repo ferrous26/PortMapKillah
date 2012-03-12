@@ -18,7 +18,7 @@ class AppDelegate
 
     center.addObserver self,
              selector: 'portMapperDidReceiveUPNPMappingTable:',
-                 name: 'TCMPortMapperDidReceiveUPNPMappingTableNotification',
+                 name: TCMPortMapperDidReceiveUPNPMappingTableNotification,
                object: mapper
 
     mapper.start

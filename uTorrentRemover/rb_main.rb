@@ -9,7 +9,6 @@
 # Loading the Cocoa framework. If you need to load more frameworks, you can
 # do that here too.
 framework 'Cocoa'
-framework 'TCMPortMapper'
 
 # Loading all the Ruby project files.
 main = File.basename(__FILE__, File.extname(__FILE__))
@@ -19,6 +18,9 @@ Dir.glob(File.join(dir_path, '*.{rb,rbo}')).map { |x| File.basename(x, File.extn
     require(path)
   end
 end
+
+framework 'TCMPortMapper'
+load_bridge_support_file File.join(dir_path, 'TCMPortMapper.bridgesupport')
 
 # Starting the Cocoa main loop.
 NSApplicationMain(0, nil)
