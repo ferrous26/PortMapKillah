@@ -1,6 +1,6 @@
 #
 #  UPnPTableRow.rb
-#  uTorrentRemover
+#  PortMapKillah
 #
 #  Created by Mark Rada on 12-03-11.
 #  Copyright 2012 Marketcircle Incorporated. All rights reserved.

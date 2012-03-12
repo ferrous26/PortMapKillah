@@ -1,6 +1,6 @@
 #
 #  rb_main.rb
-#  uTorrentRemover
+#  PortMapKillah
 #
 #  Created by Mark Rada on 12-03-09.
 #  Copyright (c) 2012 Marketcircle Incorporated. All rights reserved.

@@ -1,6 +1,6 @@
 #
 #  AppDelegate.rb
-#  uTorrentRemover
+#  PortMapKillah
 #
 #  Created by Mark Rada on 12-03-09.
 #  Copyright 2012 Marketcircle Incorporated. All rights reserved.

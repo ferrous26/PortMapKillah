@@ -1,6 +1,6 @@
 #
 #  UPnPMappingTableController.rb
-#  uTorrentRemover
+#  PortMapKillah
 #
 #  Created by Mark Rada on 12-03-10.
 #  Copyright 2012 Marketcircle Incorporated. All rights reserved.

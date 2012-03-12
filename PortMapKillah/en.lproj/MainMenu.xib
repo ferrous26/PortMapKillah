@@ -53,7 +53,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="NSMenuItem" id="694149608">
 						<reference key="NSMenu" ref="649796088"/>
-						<string key="NSTitle">uTorrentRemover</string>
+						<string key="NSTitle">PortMapKillah</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSKeyEquivModMask">1048576</int>
 						<int key="NSMnemonicLoc">2147483647</int>
@@ -67,12 +67,12 @@
 						</object>
 						<string key="NSAction">submenuAction:</string>
 						<object class="NSMenu" key="NSSubmenu" id="110575045">
-							<string key="NSTitle">uTorrentRemover</string>
+							<string key="NSTitle">PortMapKillah</string>
 							<object class="NSMutableArray" key="NSMenuItems">
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSMenuItem" id="238522557">
 									<reference key="NSMenu" ref="110575045"/>
-									<string key="NSTitle">About uTorrentRemover</string>
+									<string key="NSTitle">About PortMapKillah</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="35465992"/>
@@ -139,7 +139,7 @@
 								</object>
 								<object class="NSMenuItem" id="755159360">
 									<reference key="NSMenu" ref="110575045"/>
-									<string key="NSTitle">Hide uTorrentRemover</string>
+									<string key="NSTitle">Hide PortMapKillah</string>
 									<string key="NSKeyEquiv">h</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -177,7 +177,7 @@
 								</object>
 								<object class="NSMenuItem" id="632727374">
 									<reference key="NSMenu" ref="110575045"/>
-									<string key="NSTitle">Quit uTorrentRemover</string>
+									<string key="NSTitle">Quit PortMapKillah</string>
 									<string key="NSKeyEquiv">q</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -1309,7 +1309,7 @@
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSMenuItem" id="105068016">
 									<reference key="NSMenu" ref="992780483"/>
-									<string key="NSTitle">uTorrentRemover Help</string>
+									<string key="NSTitle">PortMapKillah Help</string>
 									<string key="NSKeyEquiv">?</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -1326,9 +1326,9 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">5</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {777, 360}}</string>
+				<string key="NSWindowRect">{{464, 330}, {777, 360}}</string>
 				<int key="NSWTFlags">1954021376</int>
-				<string key="NSWindowTitle">uTorrentRemover</string>
+				<string key="NSWindowTitle">Port Map Killah</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
@@ -1457,7 +1457,7 @@
 													<bool key="NSIsEditable">YES</bool>
 													<reference key="NSTableView" ref="939457934"/>
 												</object>
-												<object class="NSTableColumn" id="609494512">
+												<object class="NSTableColumn" id="791278779">
 													<double key="NSWidth">65</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -1466,18 +1466,18 @@
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Public Port</string>
 														<reference key="NSSupport" ref="26"/>
-														<object class="NSColor" key="NSBackgroundColor" id="12366994">
+														<object class="NSColor" key="NSBackgroundColor" id="373081996">
 															<int key="NSColorSpace">6</int>
 															<string key="NSCatalogName">System</string>
 															<string key="NSColorName">headerColor</string>
-															<object class="NSColor" key="NSColor" id="551611030">
+															<object class="NSColor" key="NSColor" id="1066196967">
 																<int key="NSColorSpace">3</int>
 																<bytes key="NSWhite">MQA</bytes>
 															</object>
 														</object>
 														<reference key="NSTextColor" ref="1026890519"/>
 													</object>
-													<object class="NSTextFieldCell" key="NSDataCell" id="629372293">
+													<object class="NSTextFieldCell" key="NSDataCell" id="716337492">
 														<int key="NSCellFlags">337772096</int>
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Text Cell</string>
@@ -1491,7 +1491,7 @@
 													<bool key="NSIsEditable">YES</bool>
 													<reference key="NSTableView" ref="939457934"/>
 												</object>
-												<object class="NSTableColumn" id="356032914">
+												<object class="NSTableColumn" id="982893932">
 													<double key="NSWidth">69</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -1500,10 +1500,10 @@
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Private Port</string>
 														<reference key="NSSupport" ref="26"/>
-														<reference key="NSBackgroundColor" ref="12366994"/>
+														<reference key="NSBackgroundColor" ref="373081996"/>
 														<reference key="NSTextColor" ref="1026890519"/>
 													</object>
-													<object class="NSTextFieldCell" key="NSDataCell" id="1004618155">
+													<object class="NSTextFieldCell" key="NSDataCell" id="919521455">
 														<int key="NSCellFlags">337772096</int>
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Text Cell</string>
@@ -1543,7 +1543,7 @@
 													<bool key="NSIsEditable">YES</bool>
 													<reference key="NSTableView" ref="939457934"/>
 												</object>
-												<object class="NSTableColumn" id="402282072">
+												<object class="NSTableColumn" id="450928614">
 													<double key="NSWidth">418</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
@@ -1552,10 +1552,10 @@
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Description</string>
 														<reference key="NSSupport" ref="26"/>
-														<reference key="NSBackgroundColor" ref="12366994"/>
+														<reference key="NSBackgroundColor" ref="373081996"/>
 														<reference key="NSTextColor" ref="1026890519"/>
 													</object>
-													<object class="NSTextFieldCell" key="NSDataCell" id="474275128">
+													<object class="NSTextFieldCell" key="NSDataCell" id="875175314">
 														<int key="NSCellFlags">337772096</int>
 														<int key="NSCellFlags2">2048</int>
 														<string key="NSContents">Text Cell</string>
@@ -1572,7 +1572,7 @@
 											</object>
 											<double key="NSIntercellSpacingWidth">3</double>
 											<double key="NSIntercellSpacingHeight">2</double>
-											<reference key="NSBackgroundColor" ref="551611030"/>
+											<reference key="NSBackgroundColor" ref="1066196967"/>
 											<object class="NSColor" key="NSGridColor">
 												<int key="NSColorSpace">6</int>
 												<string key="NSCatalogName">System</string>
@@ -2486,10 +2486,10 @@
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: arrangedObjects.public_port</string>
-						<reference key="source" ref="609494512"/>
+						<reference key="source" ref="791278779"/>
 						<reference key="destination" ref="805005305"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="609494512"/>
+							<reference key="NSSource" ref="791278779"/>
 							<reference key="NSDestination" ref="805005305"/>
 							<string key="NSLabel">value: arrangedObjects.public_port</string>
 							<string key="NSBinding">value</string>
@@ -2502,10 +2502,10 @@
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: arrangedObjects.local_port</string>
-						<reference key="source" ref="356032914"/>
+						<reference key="source" ref="982893932"/>
 						<reference key="destination" ref="805005305"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="356032914"/>
+							<reference key="NSSource" ref="982893932"/>
 							<reference key="NSDestination" ref="805005305"/>
 							<string key="NSLabel">value: arrangedObjects.local_port</string>
 							<string key="NSBinding">value</string>
@@ -2518,10 +2518,10 @@
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: arrangedObjects.description</string>
-						<reference key="source" ref="402282072"/>
+						<reference key="source" ref="450928614"/>
 						<reference key="destination" ref="805005305"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="402282072"/>
+							<reference key="NSSource" ref="450928614"/>
 							<reference key="NSDestination" ref="805005305"/>
 							<string key="NSLabel">value: arrangedObjects.description</string>
 							<string key="NSBinding">value</string>
@@ -3613,10 +3613,10 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="1054694490"/>
-							<reference ref="609494512"/>
+							<reference ref="791278779"/>
 							<reference ref="597148061"/>
-							<reference ref="356032914"/>
-							<reference ref="402282072"/>
+							<reference ref="982893932"/>
+							<reference ref="450928614"/>
 						</object>
 						<reference key="parent" ref="228409236"/>
 					</object>
@@ -3689,45 +3689,45 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">563</int>
-						<reference key="object" ref="609494512"/>
+						<reference key="object" ref="791278779"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="629372293"/>
+							<reference ref="716337492"/>
 						</object>
 						<reference key="parent" ref="939457934"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">564</int>
-						<reference key="object" ref="629372293"/>
-						<reference key="parent" ref="609494512"/>
+						<reference key="object" ref="716337492"/>
+						<reference key="parent" ref="791278779"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">565</int>
-						<reference key="object" ref="356032914"/>
+						<reference key="object" ref="982893932"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="1004618155"/>
+							<reference ref="919521455"/>
 						</object>
 						<reference key="parent" ref="939457934"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">566</int>
-						<reference key="object" ref="1004618155"/>
-						<reference key="parent" ref="356032914"/>
+						<reference key="object" ref="919521455"/>
+						<reference key="parent" ref="982893932"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">569</int>
-						<reference key="object" ref="402282072"/>
+						<reference key="object" ref="450928614"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="474275128"/>
+							<reference ref="875175314"/>
 						</object>
 						<reference key="parent" ref="939457934"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">570</int>
-						<reference key="object" ref="474275128"/>
-						<reference key="parent" ref="402282072"/>
+						<reference key="object" ref="875175314"/>
+						<reference key="parent" ref="450928614"/>
 					</object>
 				</object>
 			</object>
