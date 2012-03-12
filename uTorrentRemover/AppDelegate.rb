@@ -8,11 +8,12 @@
 
 class AppDelegate
   attr_accessor :window
-  attr_accessor :button
+  attr_accessor :refresh_button
+  attr_accessor :kill_button
   attr_accessor :table
   attr_accessor :spinner
 
-  def applicationDidFinishLaunching(a_notification)
+  def applicationDidFinishLaunching notif
     mapper = TCMPortMapper.sharedInstance
     center = NSNotificationCenter.defaultCenter
 
@@ -25,18 +26,19 @@ class AppDelegate
     mapper.requestUPNPMappingTable
   end
   
-  def removeMappings sender
+  def refreshMappings sender
     TCMPortMapper.sharedInstance.requestUPNPMappingTable
-    spinner.startAnimation self
+    spinner.startAnimation(self)
+  end
   end
 
   def portMapperDidReceiveUPNPMappingTable notif
     objects = notif.userInfo['mappingTable'].map do |x|
-      UPnPTableRow.new x['ipAddress'], x['description']
+      UPnPTableRow.new *x.values
     end
-    table.setContent objects
+    table.content = objects
 
-    spinner.stopAnimation self
+    spinner.stopAnimation(self)
   end
 end
 
