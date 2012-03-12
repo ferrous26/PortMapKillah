@@ -30,6 +30,13 @@ class AppDelegate
     TCMPortMapper.sharedInstance.requestUPNPMappingTable
     spinner.startAnimation(self)
   end
+
+  def removeMappings sender
+    mappings = table.selectedObjects.map do |mapping|
+      mapping.to_upnp_mapping
+    end
+    TCMPortMapper.sharedInstance.removeUPNPMappings mappings
+    refreshMappings(self)
   end
 
   def portMapperDidReceiveUPNPMappingTable notif
