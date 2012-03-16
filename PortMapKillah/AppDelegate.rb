@@ -25,7 +25,7 @@ class AppDelegate
     mapper.start
     mapper.requestUPNPMappingTable
   end
-  
+
   def refreshMappings sender
     TCMPortMapper.sharedInstance.requestUPNPMappingTable
     spinner.startAnimation(self)
