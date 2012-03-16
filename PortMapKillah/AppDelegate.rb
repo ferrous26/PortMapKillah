@@ -7,6 +7,9 @@
 #
 
 class AppDelegate
+  KILL_LIST  = []
+  KILL_QUEUE = Dispatch::Queue.new 'com.ferrous26.PortMapKillah.kill_queue'
+
   attr_accessor :window
   attr_accessor :refresh_button
   attr_accessor :kill_button
@@ -24,6 +27,16 @@ class AppDelegate
 
     mapper.start
     mapper.requestUPNPMappingTable
+
+    scheduleKilling
+  end
+
+  def scheduleKilling
+    KILL_QUEUE.async do
+      sleep 300
+      killMappings!
+      scheduleKilling
+    end
   end
 
   def refreshMappings sender
@@ -32,10 +45,13 @@ class AppDelegate
   end
 
   def removeMappings sender
-    mappings = table.selectedObjects.map do |mapping|
-      mapping.to_upnp_mapping
-    end
-    TCMPortMapper.sharedInstance.removeUPNPMappings mappings
+    KILL_LIST.concat table.selectedObjects.map(&:to_upnp_mapping)
+    killMappings!
+  end
+
+  def killMappings!
+    NSLog("Removing mappings for #{KILL_LIST.inspect}")
+    TCMPortMapper.sharedInstance.removeUPNPMappings KILL_LIST
     refreshMappings(self)
   end
 
