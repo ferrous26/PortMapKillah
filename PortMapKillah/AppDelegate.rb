@@ -40,10 +40,9 @@ class AppDelegate
   end
 
   def portMapperDidReceiveUPNPMappingTable notif
-    objects = notif.userInfo['mappingTable'].map do |x|
+    table.setContent notif.userInfo['mappingTable'].map { |x|
       UPnPTableRow.new *x.values
-    end
-    table.content = objects
+    }
 
     spinner.stopAnimation(self)
   end
