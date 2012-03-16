@@ -1382,7 +1382,7 @@
 											<string key="NSFrameSize">{735, 266}</string>
 											<reference key="NSSuperview" ref="15268047"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="330685009"/>
+											<reference key="NSNextKeyView" ref="875020185"/>
 											<string key="NSReuseIdentifierKey">_NS:13</string>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="491302933">
@@ -1584,7 +1584,7 @@
 												</object>
 											</object>
 											<double key="NSRowHeight">17</double>
-											<int key="NSTvFlags">-633339904</int>
+											<int key="NSTvFlags">-624951296</int>
 											<reference key="NSDelegate"/>
 											<reference key="NSDataSource"/>
 											<int key="NSColumnAutoresizingStyle">0</int>
@@ -1650,7 +1650,7 @@
 							<string key="NSFrame">{{20, 56}, {737, 284}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="875020185"/>
+							<reference key="NSNextKeyView" ref="15268047"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<int key="NSsFlags">133682</int>
 							<reference key="NSVScroller" ref="330685009"/>
@@ -1677,7 +1677,6 @@
 							<string key="NSFrame">{{469, 12}, {294, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="565925789">
