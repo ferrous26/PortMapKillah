@@ -58,7 +58,7 @@ class AppDelegate
 
   def portMapperDidReceiveUPNPMappingTable notif
     table.setContent notif.userInfo['mappingTable'].map { |x|
-      UPnPTableRow.new *x.values
+      UPnPTableRow.new *x.values_at('ipAddress','publicPort','localPort','protocol','description')
     }
 
     spinner.stopAnimation(self)
