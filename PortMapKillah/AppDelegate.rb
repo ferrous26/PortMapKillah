@@ -63,5 +63,9 @@ class AppDelegate
 
     spinner.stopAnimation(self)
   end
+
+  def windowWillClose sender
+    exit
+  end
 end
 
