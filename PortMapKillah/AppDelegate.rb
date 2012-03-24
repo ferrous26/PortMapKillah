@@ -12,6 +12,7 @@ class AppDelegate
 
   attr_accessor :window
   attr_accessor :refresh_button
+  attr_accessor :monitor_button
   attr_accessor :kill_button
   attr_accessor :table
   attr_accessor :spinner
