@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<depends_on path='/System/Library/Frameworks/SystemConfiguration.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<constant name='TCMNATPMPPortMapProtocol' type='@'/>
+<constant name='TCMNoPortMapProtocol' type='@'/>
+<constant name='TCMPortMapperDidFinishSearchForRouterNotification' type='@'/>
+<constant name='TCMPortMapperDidFinishWorkNotification' type='@'/>
+<constant name='TCMPortMapperDidReceiveUPNPMappingTableNotification' type='@'/>
+<constant name='TCMPortMapperDidStartWorkNotification' type='@'/>
+<constant name='TCMPortMapperExternalIPAddressDidChange' type='@'/>
+<constant name='TCMPortMapperWillStartSearchForRouterNotification' type='@'/>
+<constant name='TCMPortMappingDidChangeMappingStatusNotification' type='@'/>
+<constant name='TCMUPNPPortMapProtocol' type='@'/>
+<enum name='TCMPortMappingStatusMapped' value='2'/>
+<enum name='TCMPortMappingStatusTrying' value='1'/>
+<enum name='TCMPortMappingStatusUnmapped' value='0'/>
+<enum name='TCMPortMappingTransportProtocolBoth' value='3'/>
+<enum name='TCMPortMappingTransportProtocolTCP' value='2'/>
+<enum name='TCMPortMappingTransportProtocolUDP' value='1'/>
+<class name='TCMPortMapper'>
+<method selector='isAtWork'>
+<retval type='B'/>
+</method>
+<method selector='isRunning'>
+<retval type='B'/>
+</method>
+</class>
+</signatures>
