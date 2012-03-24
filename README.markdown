@@ -16,6 +16,10 @@ rake tcmportmapper
 Which will download and install the TCMPortMapper framework into your
 personal frameworks directory (`~/Library/Frameworks`).
 
+Additionally, this script requires [MacRuby](http://macruby.org/).
+However, it would not take much effort make it run under CRuby if
+needed.
+
 ## Usage
 
 ```shell
