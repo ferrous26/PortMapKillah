@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'uTorrentRemover' target in the 'uTorrentRemover' project
-//
-
-#ifdef __OBJC__
-  #import <Cocoa/Cocoa.h>
-#endif
