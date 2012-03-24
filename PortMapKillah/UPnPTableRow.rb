@@ -13,7 +13,6 @@ class UPnPTableRow
   attr_accessor :protocol
   attr_accessor :description
   attr_accessor :autokill
-  alias_method  :autokill?, :autokill
 
   def initialize ip, pub, local, proto, desc
     @ip_address   = ip
