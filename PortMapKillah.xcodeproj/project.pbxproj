@@ -17,6 +17,7 @@
 		AF830317150AE6A600940C5E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF830315150AE6A600940C5E /* MainMenu.xib */; };
 		AF83031A150AE6A600940C5E /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = AF830319150AE6A600940C5E /* rb_main.rb */; };
 		AF83031C150AE6A600940C5E /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = AF83031B150AE6A600940C5E /* AppDelegate.rb */; };
+		AFA6EFBB151E3D8100783448 /* UPnPTable.rb in Resources */ = {isa = PBXBuildFile; fileRef = AFA6EFBA151E3D8100783448 /* UPnPTable.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		AF830316150AE6A600940C5E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AF830319150AE6A600940C5E /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		AF83031B150AE6A600940C5E /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		AFA6EFBA151E3D8100783448 /* UPnPTable.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = UPnPTable.rb; sourceTree = "<group>"; };
 		AFE9108B150C4A4900AD9FC3 /* TCMPortMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TCMPortMapper.framework; path = vendor/TCMPortMapper/build/Release/TCMPortMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				AF83031B150AE6A600940C5E /* AppDelegate.rb */,
+				AFA6EFBA151E3D8100783448 /* UPnPTable.rb */,
 				AF7BEA2C150D7A0700DC4C24 /* UPnPTableRow.rb */,
 				AF47F65C150C5E05008337CF /* UPnPMappingTableController.rb */,
 				AF830314150AE6A600940C5E /* Resources */,
@@ -249,6 +252,7 @@
 				AF47F65D150C5E05008337CF /* UPnPMappingTableController.rb in Resources */,
 				AF7BEA2D150D7A0700DC4C24 /* UPnPTableRow.rb in Resources */,
 				AF7BEA2F150DB27200DC4C24 /* TCMPortMapper.bridgesupport in Resources */,
+				AFA6EFBB151E3D8100783448 /* UPnPTable.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
